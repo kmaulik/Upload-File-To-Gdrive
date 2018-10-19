@@ -25,11 +25,11 @@ router.post('/upload_file', function(req, res, next) {
     function uploadFile(auth){
         const drive = google.drive({version: 'v3', auth});
         var fileMetadata = {
-            'name': '01728081-da12-4eb5-abcd-976c61f3b713.jpg'
+            'name': '0ffa4f50-61f8-44b7-9dae-e841589177f2.jpg'
           };
           var media = {
             mimeType: 'image/jpeg',
-            body: fs.createReadStream('../upload_to_drive/uploads/01728081-da12-4eb5-abcd-976c61f3b713.jpg')
+            body: fs.createReadStream('../../NodeJs/0ffa4f50-61f8-44b7-9dae-e841589177f2.jpg')
           };
           drive.files.create({
             resource: fileMetadata,
